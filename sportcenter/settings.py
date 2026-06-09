@@ -130,3 +130,9 @@ MEDIA_URL = '/media/'
 
 # Lokasi fisik folder tempat file media akan disimpan di laptop/server
 MEDIA_ROOT = BASE_DIR / 'media'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+}
